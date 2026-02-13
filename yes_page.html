@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yay! 💕</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            min-height: 100vh; 
+            margin: 0;
+            background: #fff7f8 url('bg.jpg') center/cover no-repeat; 
+        }
+        .celebration { 
+            text-align: center; 
+            padding: 3rem; 
+            border-radius: 20px; 
+            box-shadow: 0 8px 24px rgba(255, 105, 180, 0.2); 
+            background: white; 
+            max-width: 600px;
+            animation: fadeIn 0.8s ease-in;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #ff1493;
+            margin-bottom: 2rem;
+            animation: bounce 1s infinite;
+        }
+        .hearts {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            animation: pulse 1.5s infinite;
+        }
+        .image-container {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+        .celebration-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 4px solid #ffb3d9;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .celebration-image:hover {
+            transform: scale(1.05) rotate(2deg);
+        }
+        @keyframes fadeIn {
+            from { 
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="celebration">
+        <div class="hearts">💕❤️💕</div>
+        <h1>Yay! You said yes!</h1>
+        <div class="image-container">
+            <img class="celebration-image" src="images/bunnybams.jpg" alt="Happy celebration">
+            <img class="celebration-image" src="images/bunnyddoks.jpg" alt="Sweet celebration">
+        </div>
+    </div>
+</body>
+</html>
